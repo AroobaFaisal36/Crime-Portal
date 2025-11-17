@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   /* background: url("/foorm.png") no-repeat center center/cover; */
+    color: #222;
+    line-height: 1.6;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    background: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #333;
+    padding: 0.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4444;
+}
+
+.banner {
+    background: url("https://images.unsplash.com/photo-1603037321952-2f7f4ab1a3de?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+    color: indianred;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.welcome-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.welcome-text p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #d32f2f;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #c18486;
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #b71c1c;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.gender-options label {
+    font-size: 16px;
+    color: #333;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #d32f2f;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #b71c1c;
+}
+
+.accordion-header.active {
+    background: #a31515;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    background: #f9f9f9;
+    color: #333;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-bar {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.contact-bar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.contact-bar p {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+}
