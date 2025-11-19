@@ -6,7 +6,8 @@
 }
 
 body {
-   /* background: url("/foorm.png") no-repeat center center/cover; */
+    /* use an online background so site renders immediately */
+    background: url("https://images.unsplash.com/photo-1581091870622-8b6a5f08a9a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
     color: #222;
     line-height: 1.6;
     position: relative;
@@ -179,7 +180,7 @@ form textarea {
     border-radius: 5px;
     background-color: #c18486;
 }
-
+   
 form button {
     margin-top: 1.5rem;
     padding: 0.8rem;

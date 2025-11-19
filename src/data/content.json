@@ -1,0 +1,49 @@
+{
+    "cards": [
+      {
+        "id": 1,
+        "img": "https://img.icons8.com/color/96/000000/police-badge.png",
+        "title": "Report a Crime",
+        "desc": "Submit details anonymously and securely."
+      },
+      {
+        "id": 2,
+        "img": "https://img.icons8.com/color/96/000000/security-checked--v1.png",
+        "title": "Safety Tips",
+        "desc": "Learn how to stay safe and protect others."
+      },
+      {
+        "id": 3,
+        "img": "https://img.icons8.com/color/96/000000/siren.png",
+        "title": "Emergency",
+        "desc": "Call 15 in case of immediate danger."
+      }
+    ],
+    "safety": [
+      {
+        "title": "Be Aware",
+        "content": "Stay alert in public spaces and avoid distractions like phones when walking. Awareness can help you react quickly if something feels unsafe."
+      },
+      {
+        "title": "Travel Safe",
+        "content": "Use well-lit routes and avoid isolated areas, especially at night. Always share your travel plans with a trusted friend or family member."
+      },
+      {
+        "title": "Protect Information",
+        "content": "Do not share personal details with strangers online or offline. Use strong passwords and update them regularly for better security."
+      },
+      {
+        "title": "Emergency Contacts",
+        "content": "Keep important contacts like family, friends, and local authorities saved in your phone. Quick access can make a big difference in emergencies."
+      },
+      {
+        "title": "Home Safety",
+        "content": "Always lock doors and windows, even when at home. Install proper lighting and consider security systems for added protection."
+      }
+    ],
+    "banner": {
+      "title": "Together for a Safer Community",
+      "subtitle": "Report crime, protect lives, and create awareness."
+    }
+  }
+  

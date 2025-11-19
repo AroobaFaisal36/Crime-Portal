@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small helper used by app-bg */
+.app-bg {
+  /*background-image: url("/foorm.png");*/
+  background-size: cover;
+  background-position: center;
+}
